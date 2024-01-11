@@ -1,12 +1,19 @@
-import { SimpleGrid } from "@chakra-ui/react";
-import LoginButton from "../../components/ui/LoginButton";
+import { Box, Heading, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react';
+import LoginButton from '../../components/ui/LoginButton';
 
 const LoginPage = () => {
     return (
         <>
-            <SimpleGrid columns={1}>
-                <LoginButton />
-            </SimpleGrid>
+            <Box padding={5} mt="75vh">
+                <VStack>
+                    <Heading fontFamily="Oxanium">ARMOUR CARDS</Heading>
+                    <LoginButton />
+                    <Text>Don't have an account?</Text>
+                    <Text>
+                        Sign up <Link>Here</Link>
+                    </Text>
+                </VStack>
+            </Box>
         </>
     );
 };
