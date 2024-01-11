@@ -3,7 +3,7 @@ import theme from '../../theme'
 
 const LoginButton = () => {
   return (
-    <Button bg={theme.colors.tertiary}>Login</Button>
+    <Button bg={theme.colors.tertiary} paddingX={50} color={theme.colors.primary} marginBottom={3} fontSize={20}>Login</Button>
   )
 }
 

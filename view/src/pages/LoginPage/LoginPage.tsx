@@ -5,13 +5,23 @@ import theme from '../../theme';
 const LoginPage = () => {
     return (
         <>
-            <Box padding={5} mt="65vh">
+            <Box padding={5} marginTop="65vh">
                 <VStack>
-                    <Heading fontFamily={theme.fonts.heading} color={theme.colors.secondary}>ARMOUR CARDS</Heading>
+                    <Heading
+                        fontFamily={theme.fonts.heading}
+                        color={theme.colors.secondary}
+                        size="2xl"
+                        marginBottom={5}
+                    >
+                        ARMOUR CARDS
+                    </Heading>
                     <LoginButton />
-                    <Text color={theme.colors.secondary}>Don't have an account?</Text>
                     <Text color={theme.colors.secondary}>
-                        Sign up <Link color={theme.colors.tertiary}>Here</Link>
+                        Don't have an account?
+                    </Text>
+                    <Text color={theme.colors.secondary}>
+                        {/* TODO: link to sign up page */}
+                        Sign up <Link color={theme.colors.tertiary}>Here!</Link>
                     </Text>
                 </VStack>
             </Box>
