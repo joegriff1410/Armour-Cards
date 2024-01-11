@@ -1,5 +1,6 @@
-import { Link, isRouteErrorResponse, useRouteError } from 'react-router-dom';
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Link as ReactRouterLink, isRouteErrorResponse, useRouteError } from 'react-router-dom';
+import { Box, Heading, Text, Link } from '@chakra-ui/react';
+import theme from '../../theme';
 
 const ErrorPage = () => {
     const error = useRouteError();
@@ -13,9 +14,9 @@ const ErrorPage = () => {
             </Heading>
             <Text>
                 {isRouteErrorResponse(error)
-                    ? 'This page does not exist, please go back.'
+                    ? 'This page does not exist.'
                     : 'An unexpected error occured.'}
-                <Link to="/">Go Home</Link>
+                <Link color={theme.colors.tertiary}><ReactRouterLink to="/">{' '}Press me to Go Home</ReactRouterLink></Link>
             </Text>
         </Box>
     );
