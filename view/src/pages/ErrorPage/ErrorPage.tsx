@@ -6,8 +6,8 @@ const ErrorPage = () => {
     console.log(error);
 
   return (
-    <Box padding='50'>
-        <Heading>
+    <Box padding='50' my='50%'>
+        <Heading mx='auto' textAlign='center'>
             Oops!
         </Heading>
         <Text>
