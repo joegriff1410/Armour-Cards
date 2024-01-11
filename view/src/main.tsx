@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 // import App from './App.tsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Login from './pages/LoginPage/Login';
+import Login from './pages/LoginPage/LoginPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { ChakraProvider } from '@chakra-ui/react';
 
