@@ -5,6 +5,8 @@ const colors = {
     primary: '#1B202C',
     secondary: '#D9D9D9',
     tertiary: '#00959E',
+    text: '#FFFFFF',
+    links: '#FFFFFF60'
 };
 
 const fonts = {
