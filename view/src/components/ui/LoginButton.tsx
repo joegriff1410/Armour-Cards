@@ -1,8 +1,9 @@
-import { Button } from '@chakra-ui/react'
+import { Button} from '@chakra-ui/react'
+import theme from '../../theme'
 
 const LoginButton = () => {
   return (
-    <Button bg='#00959E'>Login</Button>
+    <Button bg={theme.colors.tertiary}>Login</Button>
   )
 }
 
