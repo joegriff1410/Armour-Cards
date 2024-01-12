@@ -4,6 +4,7 @@ import theme from '../../theme';
 
 const SocialLinks = () => {
     return (
+        // TODO: Refactor using hstack
         <>
             <Center>
                 <Link
