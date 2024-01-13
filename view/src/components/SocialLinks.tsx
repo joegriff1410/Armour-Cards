@@ -1,6 +1,6 @@
 import { Center, Link } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import theme from '../../theme';
+import theme from '../theme';
 
 const SocialLinks = () => {
     return (

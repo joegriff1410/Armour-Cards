@@ -1,6 +1,6 @@
 import { Box, Button } from '@chakra-ui/react';
-import SocialLinks from '../../components/ui/SocialLinks';
-import CardTemplate from '../../components/ui/CardTemplate';
+import SocialLinks from '../../components/SocialLinks';
+import CardTemplate from '../../components/CardTemplate';
 import theme from '../../theme';
 
 const SignUpPage = () => {
