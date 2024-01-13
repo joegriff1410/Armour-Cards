@@ -1,6 +1,6 @@
 import { Center, Link } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import theme from '../../theme';
+import theme from '../theme';
 
 const SocialLinks = () => {
     return (
@@ -8,28 +8,28 @@ const SocialLinks = () => {
         <>
             <Center>
                 <Link
+                    color={theme.colors.links}
+                    fontSize="sm"
                     href="#"
                     isExternal
                     marginEnd={16}
-                    color={theme.colors.links}
-                    fontSize="sm"
                 >
                     Donate <ExternalLinkIcon />
                 </Link>
                 <Link
-                    href="https://github.com/joegriff1410"
-                    isExternal
                     color={theme.colors.links}
                     fontSize="sm"
+                    href="https://github.com/joegriff1410"
+                    isExternal
                 >
                     GitHub <ExternalLinkIcon />
                 </Link>
                 <Link
+                    color={theme.colors.links}
+                    fontSize="sm"
                     href="#"
                     isExternal
                     marginStart={10}
-                    color={theme.colors.links}
-                    fontSize="sm"
                 >
                     Instagram <ExternalLinkIcon />
                 </Link>
