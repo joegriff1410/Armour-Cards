@@ -1,7 +1,9 @@
+import SocialLinks from "../../components/ui/SocialLinks"
 
 const SignUpPage = () => {
   return (
-    <div>SignUpPage</div>
+    
+    <SocialLinks/>
   )
 }
 
