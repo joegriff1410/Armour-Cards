@@ -1,4 +1,5 @@
 import { Box, Button, Heading, Link, Text, VStack } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 import SocialLinks from '../../components/ui/SocialLinks';
 import theme from '../../theme';
 
@@ -29,8 +30,7 @@ const LandingPage = () => {
                         Don't have an account?
                     </Text>
                     <Text color={theme.colors.text} fontSize="sm">
-                        {/* TODO: link to sign up page */}
-                        Sign up <Link color={theme.colors.tertiary}>Here!</Link>
+                        Sign up <Link color={theme.colors.tertiary}><RouterLink to={'/sign-up'}>Here!</RouterLink></Link>
                     </Text>
                 </VStack>
             </Box>
