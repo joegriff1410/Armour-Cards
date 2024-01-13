@@ -11,7 +11,7 @@ import {
     Icon,
     Input,
     Stack,
-    VStack
+    VStack,
 } from '@chakra-ui/react';
 import { FaApple, FaFacebookSquare } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
@@ -24,14 +24,15 @@ const SignUpForm = () => {
         <Box>
             <Center>
                 <VStack spacing="4">
-                    <VStack as="header" spacing="6" marginTop="8">
+                    <VStack as="header" spacing="9" marginTop="8">
                         <Heading
                             as="h1"
                             color={theme.colors.text}
                             fontFamily={theme.fonts.heading}
                             marginBottom={5}
-                            size="2xl"
+                            size="xl"
                             textAlign="center"
+                            marginTop="25%"
                         >
                             SIGN UP FOR ARMOUR CARDS
                         </Heading>
@@ -41,6 +42,7 @@ const SignUpForm = () => {
                             backgroundColor="#D9D9D9"
                             borderColor="black"
                             maxWidth="240px"
+                            marginTop='30%'
                         >
                             <CardBody>
                                 <form>
