@@ -7,7 +7,7 @@ const SignUpPage = () => {
         <>
             <VStack minHeight="100vh">
                 <SignUpForm />
-                <Box marginTop='auto' marginBottom='5%'>
+                <Box marginTop="auto" marginBottom="5%">
                     <SocialLinks />
                 </Box>
             </VStack>

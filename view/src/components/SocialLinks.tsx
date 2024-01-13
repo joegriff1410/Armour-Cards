@@ -6,30 +6,30 @@ const SocialLinks = () => {
     return (
         // TODO: Refactor using hstack
         <>
-            <Center >
+            <Center>
                 <Link
+                    color={theme.colors.links}
+                    fontSize="sm"
                     href="#"
                     isExternal
                     marginEnd={16}
-                    color={theme.colors.links}
-                    fontSize="sm"
                 >
                     Donate <ExternalLinkIcon />
                 </Link>
                 <Link
-                    href="https://github.com/joegriff1410"
-                    isExternal
                     color={theme.colors.links}
                     fontSize="sm"
+                    href="https://github.com/joegriff1410"
+                    isExternal
                 >
                     GitHub <ExternalLinkIcon />
                 </Link>
                 <Link
+                    color={theme.colors.links}
+                    fontSize="sm"
                     href="#"
                     isExternal
                     marginStart={10}
-                    color={theme.colors.links}
-                    fontSize="sm"
                 >
                     Instagram <ExternalLinkIcon />
                 </Link>

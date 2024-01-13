@@ -42,7 +42,7 @@ const SignUpForm = () => {
                             backgroundColor="#D9D9D9"
                             borderColor="black"
                             maxWidth="240px"
-                            marginTop='30%'
+                            marginTop="30%"
                         >
                             <CardBody>
                                 <form>
@@ -64,8 +64,8 @@ const SignUpForm = () => {
                                         </FormControl>
                                         <FormControl>
                                             <FormLabel
-                                                size="sm"
                                                 color={theme.colors.primary}
+                                                size="sm"
                                             >
                                                 Email Address:
                                             </FormLabel>
@@ -93,11 +93,11 @@ const SignUpForm = () => {
                                             />
                                         </FormControl>
                                         <Button
+                                            _hover={{ bg: '#006167' }}
                                             bg={theme.colors.tertiary}
                                             color={theme.colors.primary}
                                             fontSize={20}
                                             size="sm"
-                                            _active={{ bg: '#00959E50' }}
                                         >
                                             Sign Up
                                         </Button>
@@ -107,39 +107,39 @@ const SignUpForm = () => {
                         </Card>
                     </Center>
 
-                    <Card variant="outline" borderColor="#00959E">
+                    <Card variant="outline" borderColor="#fff">
                         <CardBody>
                             <Center>
                                 <HStack spacing="1">
                                     <Icon
                                         as={FcGoogle}
                                         background="white"
-                                        paddingX="10px"
-                                        width="50px"
+                                        borderRadius="5px"
                                         height="25px"
                                         marginX="5px"
-                                        borderRadius="5px"
+                                        paddingX="10px"
+                                        width="50px"
                                     ></Icon>
                                     <Icon
                                         as={FaApple}
-                                        color="black"
                                         background="white"
-                                        paddingX="10px"
-                                        width="50px"
+                                        borderRadius="5px"
+                                        color="black"
                                         height="25px"
                                         marginX="5px"
-                                        borderRadius="5px"
+                                        paddingX="10px"
+                                        width="50px"
                                     ></Icon>
                                     <Icon
                                         as={FaFacebookSquare}
-                                        color="#0866ff"
                                         background="white"
+                                        borderRadius="5px"
+                                        color="#0866ff"
+                                        height="25px"
+                                        marginX="5px"
                                         paddingX="10px"
                                         paddingY="5px"
                                         width="50px"
-                                        height="25px"
-                                        marginX="5px"
-                                        borderRadius="5px"
                                     ></Icon>
                                 </HStack>
                             </Center>

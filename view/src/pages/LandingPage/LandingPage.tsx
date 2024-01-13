@@ -14,7 +14,7 @@ import theme from '../../theme';
 const LandingPage = () => {
     return (
         <>
-            <Stack minHeight='100vh'>
+            <Stack minHeight="100vh">
                 <Box padding={5} marginTop="65vh">
                     <VStack>
                         <Heading
@@ -26,28 +26,33 @@ const LandingPage = () => {
                         >
                             ARMOUR CARDS
                         </Heading>
-                        <Button
-                            bg={theme.colors.tertiary}
-                            color={theme.colors.primary}
-                            fontSize={20}
-                            marginBottom={3}
-                            paddingX={50}
-                        >
-                            Login
-                        </Button>
+                        <RouterLink to="login">
+                            <Button
+                                _hover={{ bg: '#006167' }}
+                                bg={theme.colors.tertiary}
+                                color={theme.colors.primary}
+                                fontSize={20}
+                                marginBottom={3}
+                                paddingX={50}
+                            >
+                                Login
+                            </Button>
+                        </RouterLink>
 
                         <Text color={theme.colors.text} fontSize="md">
                             Don't have an account?
                         </Text>
                         <Text color={theme.colors.text} fontSize="sm">
                             Sign up{' '}
-                            <Link color={theme.colors.tertiary}>
-                                <RouterLink to={'/sign-up'}>Here!</RouterLink>
-                            </Link>
+                            <RouterLink to={'/sign-up'}>
+                                <Link as="label" color={theme.colors.tertiary}>
+                                    Here!
+                                </Link>
+                            </RouterLink>
                         </Text>
                     </VStack>
                 </Box>
-                <Box marginTop='auto' marginBottom='5%'>
+                <Box marginTop="auto" marginBottom="5%">
                     <SocialLinks />
                 </Box>
             </Stack>
