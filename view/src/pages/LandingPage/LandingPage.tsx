@@ -9,19 +9,20 @@ const LandingPage = () => {
             <Box padding={5} marginTop="65vh">
                 <VStack>
                     <Heading
-                        fontFamily={theme.fonts.heading}
+                        as="h1"
                         color={theme.colors.text}
-                        size="2xl"
+                        fontFamily={theme.fonts.heading}
                         marginBottom={5}
+                        size="2xl"
                     >
                         ARMOUR CARDS
                     </Heading>
                     <Button
                         bg={theme.colors.tertiary}
-                        paddingX={50}
                         color={theme.colors.primary}
-                        marginBottom={3}
                         fontSize={20}
+                        marginBottom={3}
+                        paddingX={50}
                     >
                         Login
                     </Button>

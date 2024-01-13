@@ -2,3 +2,7 @@
     background-color: #1B202C;
     box-sizing: border-box;
 }
+
+* {
+    box-sizing: border-box;
+}
