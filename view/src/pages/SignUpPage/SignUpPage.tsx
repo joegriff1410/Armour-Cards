@@ -1,10 +1,16 @@
-import SocialLinks from "../../components/ui/SocialLinks"
+import { Box } from '@chakra-ui/react';
+import SocialLinks from '../../components/ui/SocialLinks';
+import CardTemplate from '../../components/ui/Card';
 
 const SignUpPage = () => {
-  return (
-    
-    <SocialLinks/>
-  )
-}
+    return (
+        <>
+          <CardTemplate />
+            <Box>
+                <SocialLinks />
+            </Box>
+        </>
+    );
+};
 
-export default SignUpPage
+export default SignUpPage;
