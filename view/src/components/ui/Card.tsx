@@ -1,6 +1,5 @@
 import { Card, CardBody } from '@chakra-ui/react';
 import theme from '../../theme';
-import SignUpButton from './SignUpButton';
 
 const CardTemplate = () => {
     return (
@@ -10,9 +9,7 @@ const CardTemplate = () => {
             marginX="auto"
             marginY="70%"
         >
-            <CardBody>
-                <SignUpButton />
-            </CardBody>
+            <CardBody></CardBody>
         </Card>
     );
 };

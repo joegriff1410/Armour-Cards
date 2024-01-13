@@ -1,7 +1,6 @@
-import { Box, Heading, Link, Text, VStack } from '@chakra-ui/react';
-import LoginButton from '../../components/ui/LoginButton';
-import theme from '../../theme';
+import { Box, Button, Heading, Link, Text, VStack } from '@chakra-ui/react';
 import SocialLinks from '../../components/ui/SocialLinks';
+import theme from '../../theme';
 
 const LandingPage = () => {
     return (
@@ -16,7 +15,16 @@ const LandingPage = () => {
                     >
                         ARMOUR CARDS
                     </Heading>
-                    <LoginButton />
+                    <Button
+                        bg={theme.colors.tertiary}
+                        paddingX={50}
+                        color={theme.colors.primary}
+                        marginBottom={3}
+                        fontSize={20}
+                    >
+                        Login
+                    </Button>
+
                     <Text color={theme.colors.text} fontSize="md">
                         Don't have an account?
                     </Text>
