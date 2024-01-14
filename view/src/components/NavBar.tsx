@@ -1,40 +1,35 @@
 import { HamburgerIcon, MoonIcon } from '@chakra-ui/icons';
 import {
     Badge,
-    HStack,
-    IconButton,
-    Text,
+    Box,
+    Button,
     Drawer,
     DrawerBody,
+    DrawerCloseButton,
+    DrawerContent,
     DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    useDisclosure,
-    Button,
-    Input,
-    Spacer,
-    Center,
-    Box,
-    VStack,
     Flex,
     Icon,
+    IconButton,
+    Text,
+    useDisclosure,
 } from '@chakra-ui/react';
-import theme from '../theme';
 import { useRef } from 'react';
+import theme from '../theme';
 
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = useRef();
+    const btnRef = useRef<HTMLButtonElement>(null);
 
     return (
         <Flex
-            as="nav"
-            padding="10px"
-            justify="space-between"
             alignItems="center"
+            as="nav"
             gap="5px"
+            justify="space-between"
+            padding="10px"
         >
             {/* TODO: add logo */}
             <Icon marginRight="40px" />
@@ -43,8 +38,8 @@ const NavBar = () => {
                 background={theme.colors.secondary}
                 border="1px"
                 borderColor="black"
-                color={theme.colors.primary}
                 borderRadius="5px"
+                color={theme.colors.primary}
                 marginLeft="50px"
             >
                 <Text
@@ -63,21 +58,22 @@ const NavBar = () => {
                     variant="outline"
                 />
                 <IconButton
-                    ref={btnRef}
+                    aria-label={'menu button'}
                     color={theme.colors.tertiary}
-                    onClick={onOpen}
-                    variant="outline"
                     icon={<HamburgerIcon />}
                     marginLeft="5px"
+                    onClick={onOpen}
+                    ref={btnRef}
+                    variant="outline"
                 >
                     Open
                 </IconButton>
             </Box>
             <Drawer
-                isOpen={isOpen}
-                placement="right"
-                onClose={onClose}
                 finalFocusRef={btnRef}
+                isOpen={isOpen}
+                onClose={onClose}
+                placement="right"
             >
                 <DrawerOverlay />
                 <DrawerContent>
