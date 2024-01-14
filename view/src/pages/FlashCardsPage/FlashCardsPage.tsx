@@ -1,12 +1,15 @@
 import { Box } from '@chakra-ui/react';
 import SocialLinks from '../../components/SocialLinks';
+import NavBar from '../../components/NavBar';
 
 const FlashCardsPage = () => {
     return (
-        
-        <Box marginTop="auto" marginBottom="5%">
-            <SocialLinks />
-        </Box>
+        <>
+            <NavBar />
+            <Box marginTop="auto" marginBottom="5%">
+                <SocialLinks />
+            </Box>
+        </>
     );
 };
 
