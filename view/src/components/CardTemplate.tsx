@@ -1,4 +1,4 @@
-import { Card, CardBody, Center, Image } from '@chakra-ui/react';
+import { Card, CardBody, Center, Image, useColorModeValue } from '@chakra-ui/react';
 
 const vehicles = [
     {
@@ -13,27 +13,26 @@ const vehicles = [
 ];
 
 const CardTemplate = () => {
+    const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
+
     return (
-        // <Center>
-        //     <Card
-        //         backgroundColor={theme.colors.secondary}
-        //         width="237px"
-        //         height="316px"
-        //         border="2px"
-        //         borderColor="black"
-        //     ></Card>
-        // </Center>
         <Center>
             <Card
-                backgroundColor="#D9D9D9"
+                backgroundColor={primaryColor}
                 border="1px"
                 borderColor="black"
                 maxWidth="240px"
-                minHeight='320px'
+                minHeight="320px"
                 marginTop="30%"
             >
                 <CardBody>
-                    <Image src={vehicles[0].src} borderRadius='5px' border='1px' borderColor='black' marginTop='25%'></Image>
+                    <Image
+                        src={vehicles[0].src}
+                        borderRadius="5px"
+                        border="1px"
+                        borderColor="black"
+                        marginTop="25%"
+                    ></Image>
                 </CardBody>
             </Card>
         </Center>

@@ -14,6 +14,7 @@ import {
     Icon,
     IconButton,
     Text,
+    useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react';
 import { useRef } from 'react';
@@ -23,6 +24,8 @@ import ColorModeSwitch from './ColorModeSwitch';
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<HTMLButtonElement>(null);
+
+    const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
 
     return (
         <Flex
@@ -36,7 +39,7 @@ const NavBar = () => {
             <Icon marginRight="40px" />
             {/* TODO: dynamically render countries */}
             <Badge
-                background={theme.colors.secondary}
+                background={primaryColor}
                 border="1px"
                 borderColor="black"
                 borderRadius="5px"
