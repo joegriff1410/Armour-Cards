@@ -40,9 +40,10 @@ const SignUpForm = () => {
                     <Center>
                         <Card
                             backgroundColor="#D9D9D9"
-                            borderColor="black"
                             maxWidth="240px"
                             marginTop="30%"
+                            border="1px"
+                            borderColor="black"
                         >
                             <CardBody>
                                 <form>

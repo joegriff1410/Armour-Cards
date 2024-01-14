@@ -3,6 +3,8 @@ import SocialLinks from '../../components/SocialLinks';
 import NavBar from '../../components/NavBar';
 import CardTemplate from '../../components/CardTemplate';
 
+
+
 const FlashCardsPage = () => {
     return (
         <>
@@ -12,6 +14,7 @@ const FlashCardsPage = () => {
                 <Box marginTop="auto" marginBottom="5%">
                     <SocialLinks />
                 </Box>
+                
             </Stack>
         </>
     );
