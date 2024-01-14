@@ -22,7 +22,7 @@ const LoginForm = () => {
         <Box>
             <Center>
                 <VStack spacing="4">
-                    <VStack as="header" spacing="9" marginTop="8">
+                    <VStack as="header" spacing="9">
                         <Heading
                             as="h1"
                             color={theme.colors.text}
@@ -30,7 +30,8 @@ const LoginForm = () => {
                             marginBottom={5}
                             size="xl"
                             textAlign="center"
-                            marginTop="25%"
+                            marginTop="5%"
+                            padding="10px"
                         >
                             LOGIN TO ARMOUR CARDS
                         </Heading>
@@ -38,9 +39,10 @@ const LoginForm = () => {
                     <Center>
                         <Card
                             backgroundColor="#D9D9D9"
-                            borderColor="black"
                             maxWidth="240px"
                             marginTop="30%"
+                            border="1px"
+                            borderColor="black"
                         >
                             <CardBody>
                                 <form>
@@ -48,6 +50,7 @@ const LoginForm = () => {
                                         <FormControl>
                                             <FormLabel
                                                 color={theme.colors.primary}
+                                                fontFamily={theme.fonts.body}
                                                 size="sm"
                                             >
                                                 Email Address:
@@ -62,8 +65,9 @@ const LoginForm = () => {
                                         </FormControl>
                                         <FormControl>
                                             <FormLabel
-                                                size="sm"
                                                 color={theme.colors.primary}
+                                                fontFamily={theme.fonts.body}
+                                                size="sm"
                                             >
                                                 Password:
                                             </FormLabel>
@@ -79,6 +83,7 @@ const LoginForm = () => {
                                             _hover={{ bg: '#006167' }}
                                             bg={theme.colors.tertiary}
                                             color={theme.colors.primary}
+                                            fontFamily={theme.fonts.body}
                                             fontSize={20}
                                             size="sm"
                                         >

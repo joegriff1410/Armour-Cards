@@ -31,6 +31,7 @@ const LandingPage = () => {
                                 _hover={{ bg: '#006167' }}
                                 bg={theme.colors.tertiary}
                                 color={theme.colors.primary}
+                                fontFamily={theme.fonts.body}
                                 fontSize={20}
                                 marginBottom={3}
                                 paddingX={50}
@@ -39,13 +40,25 @@ const LandingPage = () => {
                             </Button>
                         </RouterLink>
 
-                        <Text color={theme.colors.text} fontSize="md">
+                        <Text
+                            color={theme.colors.text}
+                            fontSize="md"
+                            fontFamily={theme.fonts.body}
+                        >
                             Don't have an account?
                         </Text>
-                        <Text color={theme.colors.text} fontSize="sm">
+                        <Text
+                            color={theme.colors.text}
+                            fontSize="sm"
+                            fontFamily={theme.fonts.body}
+                        >
                             Sign up{' '}
                             <RouterLink to={'/sign-up'}>
-                                <Link as="label" color={theme.colors.tertiary}>
+                                <Link
+                                    as="label"
+                                    color={theme.colors.tertiary}
+                                    fontFamily={theme.fonts.body}
+                                >
                                     Here!
                                 </Link>
                             </RouterLink>
