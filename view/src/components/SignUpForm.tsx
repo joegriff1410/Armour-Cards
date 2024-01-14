@@ -24,7 +24,7 @@ const SignUpForm = () => {
         <Box>
             <Center>
                 <VStack spacing="4">
-                    <VStack as="header" spacing="9" marginTop="8">
+                    <VStack as="header" spacing="9">
                         <Heading
                             as="h1"
                             color={theme.colors.text}
@@ -32,7 +32,7 @@ const SignUpForm = () => {
                             marginBottom={5}
                             size="xl"
                             textAlign="center"
-                            marginTop="25%"
+                            marginTop="5%"
                         >
                             SIGN UP FOR ARMOUR CARDS
                         </Heading>

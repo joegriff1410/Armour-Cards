@@ -22,7 +22,7 @@ const LoginForm = () => {
         <Box>
             <Center>
                 <VStack spacing="4">
-                    <VStack as="header" spacing="9" marginTop="8">
+                    <VStack as="header" spacing="9" >
                         <Heading
                             as="h1"
                             color={theme.colors.text}
@@ -30,7 +30,8 @@ const LoginForm = () => {
                             marginBottom={5}
                             size="xl"
                             textAlign="center"
-                            marginTop="25%"
+                            marginTop="5%"
+                            padding='10px'
                         >
                             LOGIN TO ARMOUR CARDS
                         </Heading>
