@@ -1,4 +1,4 @@
-import { Center, Link } from '@chakra-ui/react';
+import { Center, Link, Spacer } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import theme from '../theme';
 
@@ -6,17 +6,18 @@ const SocialLinks = () => {
     return (
         // TODO: Refactor using hstack
         <>
-            <Center>
+            <Center width="100%">
                 <Link
                     color={theme.colors.links}
                     fontFamily={theme.fonts.body}
                     fontSize="sm"
                     href="#"
                     isExternal
-                    marginEnd={16}
+                    marginLeft="40px"
                 >
                     Donate <ExternalLinkIcon />
                 </Link>
+                <Spacer />
                 <Link
                     color={theme.colors.links}
                     fontFamily={theme.fonts.body}
@@ -26,13 +27,14 @@ const SocialLinks = () => {
                 >
                     GitHub <ExternalLinkIcon />
                 </Link>
+                <Spacer />
                 <Link
                     color={theme.colors.links}
                     fontFamily={theme.fonts.body}
                     fontSize="sm"
                     href="#"
                     isExternal
-                    marginStart={10}
+                    marginRight="40px"
                 >
                     Instagram <ExternalLinkIcon />
                 </Link>

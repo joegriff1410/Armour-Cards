@@ -5,7 +5,7 @@ import NavBar from '../../components/NavBar';
 const FlashCardsPage = () => {
     return (
         <>
-            <Stack minHeight='100vh'>
+            <Stack minHeight="100vh">
                 <NavBar />
                 <Box marginTop="auto" marginBottom="5%">
                     <SocialLinks />

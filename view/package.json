@@ -18,7 +18,6 @@
         "@fontsource/oxanium": "^5.0.18",
         "@tanstack/react-query": "^5.17.9",
         "axios": "^1.6.5",
-        "framer-motion": "^10.18.0",
         "passport-local": "^1.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
