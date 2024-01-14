@@ -48,6 +48,7 @@ const LoginForm = () => {
                                         <FormControl>
                                             <FormLabel
                                                 color={theme.colors.primary}
+                                                fontFamily={theme.fonts.body}
                                                 size="sm"
                                             >
                                                 Email Address:
@@ -62,8 +63,9 @@ const LoginForm = () => {
                                         </FormControl>
                                         <FormControl>
                                             <FormLabel
-                                                size="sm"
                                                 color={theme.colors.primary}
+                                                fontFamily={theme.fonts.body}
+                                                size="sm"
                                             >
                                                 Password:
                                             </FormLabel>
@@ -79,6 +81,7 @@ const LoginForm = () => {
                                             _hover={{ bg: '#006167' }}
                                             bg={theme.colors.tertiary}
                                             color={theme.colors.primary}
+                                            fontFamily={theme.fonts.body}
                                             fontSize={20}
                                             size="sm"
                                         >

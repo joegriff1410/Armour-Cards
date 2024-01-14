@@ -49,8 +49,9 @@ const SignUpForm = () => {
                                     <Stack>
                                         <FormControl>
                                             <FormLabel
-                                                size="sm"
                                                 color={theme.colors.primary}
+                                                size="sm"
+                                                fontFamily={theme.fonts.body}
                                             >
                                                 Name:
                                             </FormLabel>
@@ -65,6 +66,7 @@ const SignUpForm = () => {
                                         <FormControl>
                                             <FormLabel
                                                 color={theme.colors.primary}
+                                                fontFamily={theme.fonts.body}
                                                 size="sm"
                                             >
                                                 Email Address:
@@ -79,8 +81,9 @@ const SignUpForm = () => {
                                         </FormControl>
                                         <FormControl>
                                             <FormLabel
-                                                size="sm"
                                                 color={theme.colors.primary}
+                                                size="sm"
+                                                fontFamily={theme.fonts.body}
                                             >
                                                 Password:
                                             </FormLabel>
@@ -96,6 +99,7 @@ const SignUpForm = () => {
                                             _hover={{ bg: '#006167' }}
                                             bg={theme.colors.tertiary}
                                             color={theme.colors.primary}
+                                            fontFamily={theme.fonts.body}
                                             fontSize={20}
                                             size="sm"
                                         >
