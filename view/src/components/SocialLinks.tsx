@@ -24,6 +24,7 @@ const SocialLinks = () => {
                     fontSize="sm"
                     href="https://github.com/joegriff1410"
                     isExternal
+                    marginX='40px'
                 >
                     GitHub <ExternalLinkIcon />
                 </Link>
