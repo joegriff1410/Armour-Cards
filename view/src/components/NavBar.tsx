@@ -1,4 +1,4 @@
-import { HamburgerIcon, MoonIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
     Badge,
     Box,
@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { useRef } from 'react';
 import theme from '../theme';
+import ColorModeSwitch from './ColorModeSwitch';
 
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -52,11 +53,7 @@ const NavBar = () => {
             </Badge>
             {/* TODO: dynamically render mode */}
             <Box marginLeft="40px">
-                <IconButton
-                    aria-label={'Colour scheme change'}
-                    icon={<MoonIcon />}
-                    variant="outline"
-                />
+                <ColorModeSwitch />
                 <IconButton
                     aria-label={'menu button'}
                     color={theme.colors.tertiary}

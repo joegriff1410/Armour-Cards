@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { ThemeConfig, extendTheme } from '@chakra-ui/react';
 import '@fontsource/oxanium/600.css';
 
 const colors = {
@@ -14,6 +14,11 @@ const fonts = {
     body: 'oxanium',
 };
 
-const theme = extendTheme({ colors, fonts });
+const config: ThemeConfig = {
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
+}
+
+const theme = extendTheme({ colors, fonts, config });
 
 export default theme;
