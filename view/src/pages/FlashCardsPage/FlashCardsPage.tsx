@@ -1,14 +1,16 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 import SocialLinks from '../../components/SocialLinks';
 import NavBar from '../../components/NavBar';
 
 const FlashCardsPage = () => {
     return (
         <>
-            <NavBar />
-            <Box marginTop="auto" marginBottom="5%">
-                <SocialLinks />
-            </Box>
+            <Stack minHeight='100vh'>
+                <NavBar />
+                <Box marginTop="auto" marginBottom="5%">
+                    <SocialLinks />
+                </Box>
+            </Stack>
         </>
     );
 };
