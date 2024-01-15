@@ -1,4 +1,4 @@
-import { HamburgerIcon, MoonIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
     Badge,
     Box,
@@ -14,12 +14,17 @@ import {
     Icon,
     IconButton,
     Text,
+    useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react';
 import { useRef } from 'react';
 import theme from '../theme';
+import ColorModeSwitch from './ColorModeSwitch';
 
 const NavBar = () => {
+    // Hooks
+    const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
+    const menuButtonColor = useColorModeValue('#fff', '#1B202C');
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<HTMLButtonElement>(null);
 
@@ -35,14 +40,14 @@ const NavBar = () => {
             <Icon marginRight="40px" />
             {/* TODO: dynamically render countries */}
             <Badge
-                background={theme.colors.secondary}
+                background={primaryColor}
                 border="1px"
                 borderColor="black"
                 borderRadius="5px"
-                color={theme.colors.primary}
                 marginLeft="50px"
             >
                 <Text
+                    color={menuButtonColor}
                     fontFamily={theme.fonts.heading}
                     fontSize="20px"
                     padding="4px"
@@ -50,16 +55,12 @@ const NavBar = () => {
                     Russia
                 </Text>
             </Badge>
-            {/* TODO: dynamically render mode */}
             <Box marginLeft="40px">
-                <IconButton
-                    aria-label={'Colour scheme change'}
-                    icon={<MoonIcon />}
-                    variant="outline"
-                />
+                <ColorModeSwitch />
                 <IconButton
                     aria-label={'menu button'}
-                    color={theme.colors.tertiary}
+                    bgColor={primaryColor}
+                    color={menuButtonColor}
                     icon={<HamburgerIcon />}
                     marginLeft="5px"
                     onClick={onOpen}

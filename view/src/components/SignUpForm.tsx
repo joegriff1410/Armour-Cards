@@ -27,12 +27,11 @@ const SignUpForm = () => {
                     <VStack as="header" spacing="9">
                         <Heading
                             as="h1"
-                            color={theme.colors.text}
                             fontFamily={theme.fonts.heading}
                             marginBottom={5}
+                            marginTop="5%"
                             size="xl"
                             textAlign="center"
-                            marginTop="5%"
                         >
                             SIGN UP FOR ARMOUR CARDS
                         </Heading>
@@ -40,10 +39,10 @@ const SignUpForm = () => {
                     <Center>
                         <Card
                             backgroundColor="#D9D9D9"
-                            maxWidth="240px"
-                            marginTop="30%"
                             border="1px"
                             borderColor="black"
+                            marginTop="30%"
+                            maxWidth="240px"
                         >
                             <CardBody>
                                 <form>
