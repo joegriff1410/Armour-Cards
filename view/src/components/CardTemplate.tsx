@@ -1,4 +1,10 @@
-import { Card, CardBody, Center, Image, useColorModeValue } from '@chakra-ui/react';
+import {
+    Card,
+    CardBody,
+    Center,
+    Image,
+    useColorModeValue,
+} from '@chakra-ui/react';
 
 const vehicles = [
     {
@@ -13,6 +19,7 @@ const vehicles = [
 ];
 
 const CardTemplate = () => {
+    // Hooks
     const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
 
     return (
@@ -23,7 +30,6 @@ const CardTemplate = () => {
                 borderColor="black"
                 maxWidth="240px"
                 minHeight="320px"
-                marginTop="30%"
             >
                 <CardBody>
                     <Image

@@ -1,14 +1,17 @@
-import { Center, Link, Spacer } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { Center, Link, Spacer, useColorModeValue } from '@chakra-ui/react';
 import theme from '../theme';
 
 const SocialLinks = () => {
+    // Hooks
+    const linksColor = useColorModeValue('#8A8A8A','#FFFFFF60')
+
     return (
         // TODO: Refactor using hstack
         <>
             <Center width="100%">
                 <Link
-                    color={theme.colors.links}
+                    color={linksColor}
                     fontFamily={theme.fonts.body}
                     fontSize="sm"
                     href="#"
@@ -19,7 +22,7 @@ const SocialLinks = () => {
                 </Link>
                 <Spacer />
                 <Link
-                    color={theme.colors.links}
+                    color={linksColor}
                     fontFamily={theme.fonts.body}
                     fontSize="sm"
                     href="https://github.com/joegriff1410"
@@ -30,7 +33,7 @@ const SocialLinks = () => {
                 </Link>
                 <Spacer />
                 <Link
-                    color={theme.colors.links}
+                   color={linksColor}
                     fontFamily={theme.fonts.body}
                     fontSize="sm"
                     href="#"

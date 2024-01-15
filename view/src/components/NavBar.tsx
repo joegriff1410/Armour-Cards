@@ -22,10 +22,11 @@ import theme from '../theme';
 import ColorModeSwitch from './ColorModeSwitch';
 
 const NavBar = () => {
+    // Hooks
+    const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
+    const menuButtonColor = useColorModeValue('#fff', '#1B202C');
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<HTMLButtonElement>(null);
-
-    const primaryColor = useColorModeValue('#1B202C', '#D9D9D9');
 
     return (
         <Flex
@@ -43,10 +44,10 @@ const NavBar = () => {
                 border="1px"
                 borderColor="black"
                 borderRadius="5px"
-                color={theme.colors.primary}
                 marginLeft="50px"
             >
                 <Text
+                    color={menuButtonColor}
                     fontFamily={theme.fonts.heading}
                     fontSize="20px"
                     padding="4px"
@@ -54,12 +55,12 @@ const NavBar = () => {
                     Russia
                 </Text>
             </Badge>
-            {/* TODO: dynamically render mode */}
             <Box marginLeft="40px">
                 <ColorModeSwitch />
                 <IconButton
                     aria-label={'menu button'}
-                    color={theme.colors.tertiary}
+                    bgColor={primaryColor}
+                    color={menuButtonColor}
                     icon={<HamburgerIcon />}
                     marginLeft="5px"
                     onClick={onOpen}
