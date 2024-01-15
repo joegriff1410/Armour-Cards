@@ -15,7 +15,7 @@ To run ArmourCards locally, follow these steps:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/ArmourCards.git
-   cd ArmourCards
+   cd armour-cards
 
 	2.	Install Dependencies:
 
